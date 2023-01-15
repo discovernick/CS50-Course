@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: When you send through a sorted algorithm, it performs better than all the others as is in line with the lower bound of "n" as opposed to "n^2" and "nlog(n)" for the alternative algorithms.
+
+sort2 uses: Merge Sort
+
+How do you know?: In all cases performed quite quickly and this is in line with the upper bound value being less than the other algorithms. This is particualrly evident on the random50000.
+
+sort3 uses: Selection Sort
+
+How do you know?: Almost no difference in the timing between all sequences, showing that it still literally goes through each set of numbers the same amount of time.
