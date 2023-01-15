@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand</h3>
+                <table>
+                    <tr>
+                        <td> <button id="btn1"> 6 people per 1 sheep</button> </td>
+                        <td> <button id="btn2"> 3 people per 1 sheep</button> </td>
+                        <td> <button id="btn3"> 1 person per 5 sheep</button> </td>
+                    </tr>
+                        <td id="Incorrect1" style="color:white; text-align:center;"> Incorrect </td>
+                        <td id="Incorrect2" style="color:white; text-align:center;"> Incorrect </td>
+                        <td id="Correct" style="color:white; text-align:center;"> Correct </td>
+                </table>
+                <script>
+                    // Button 1
+                    let btn1 = document.querySelector('#btn1');
+                    let In1 = document.querySelector('#Incorrect1');
+                    document.querySelector('#btn1').addEventListener('click', function()
+                    {
+                        btn1.style.backgroundColor = 'red';
+                        In1.style.color = 'black';
+                    });
+                    // Button 2
+                    let btn2 = document.querySelector('#btn2');
+                    let In2 = document.querySelector('#Incorrect2');
+                    document.querySelector('#btn2').addEventListener('click', function()
+                    {
+                        btn2.style.backgroundColor = 'red';
+                        In2.style.color = 'black';
+                    });
+                    // Button 3
+                    let btn3 = document.querySelector('#btn3');
+                    let Co1 = document.querySelector('#Correct');
+                    document.querySelector('#btn3').addEventListener('click', function()
+                    {
+                        btn3.style.backgroundColor = 'green';
+                        Co1.style.color = 'black';
+                    });
+
+                </script>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which country is it illegal to own only one guine pig, as a lone guinea pig might get lonely?</h3>
+                <form action="javascript:CheckCorrect()">
+                    <input type="text" id="user_input">
+                    <input type="submit" value="Check Answer">
+                <p id="Test"></p>
+                <script>
+                    function CheckCorrect() {
+                        let user_input = document.querySelector('#user_input').value;
+                        let field = document.querySelector('#user_input');
+                        user_input = user_input.toLowerCase()
+                        // let indicator = "gg";
+                        if (user_input.localeCompare("switzerland") == 0) {
+                            // indicator = "Correct";
+                            document.getElementById("Test").innerHTML = "Correct";
+                            field.style.backgroundColor = 'green';
+                        } else {
+                            // indicator = "Incorrect";
+                            document.getElementById("Test").innerHTML = "Incorrect";
+                            field.style.backgroundColor = 'red';
+                        }
+                        // document.write(indicator)
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+.header {
+    background-color: #0026FF;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+body {
+    background-image: url("https://images.pling.com/img/00/00/66/78/52/1857066/beautiful-landscape-mountain-scenery-wallpaper-wallpaper-1280x1024-10wallpaper.com1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 62.5%;
+    height: 100%;
+    min-height: 100%;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    margin: 20px;
+    border-radius: 25px;
+    height: 500px;
+  }
+
+button {
+    background-color: #0026FF;
+    border: 1px solid transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFFFFF ;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:200px;   /* Height of the footer */
+    background:#6cf;
+    align-items: center;
+    justify-content:center;
+ }
+
+ .centerflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF ;
+    height: 150px;
+    background: #0026FF;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    margin-top: 20px;
+  }
+
+br {
+
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 20px; /* change this to whatever height you want it */
+}
+
+#aboutme {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel {
+    width:640px;
+    height:360px;
+}
+
+#bottomdiv {
+    display: block;
+    margin-bottom: 150px;
+}
+
+#smallerimage {
+    width: 100px;
+    height: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cardImg {
+    width: 200px;
+    height: auto;
+}

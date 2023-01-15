@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<h1 style="margin-bottom: 20px;"> Select Top Up Amount </h1>
+<form action="/topup" method="post">
+    <div class="mb-3" style="margin-top: 20px;">
+        <input class="form-control mx-auto w-auto" id="topup" name="topup" placeholder="Amount" type="number">
+    </div>
+    <div class="mb-3" style="margin-top: 20px;">
+        <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <button class="btn btn-danger" type="submit">Top Up</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title> Car Quiz Time! </title>
+        <link rel="icon" href="https://static.thenounproject.com/png/172946-200.png" type="image/icon type">
+    </head>
+
+    <div class="header">
+        <h1> Cars Quiz </h1>
+    </div>
+
+    <body>
+        <h2 style="color:#FFFFFF;"> This next section is going to a quiz on different kinds of car logo's and their respective names </h2>
+        <p style="color:#FFFFFF;"> Please enter your guess for the car logo and click Submit below</p>
+        <p id="Test" style="font-size:40px; font-weight:bold"></p>
+        <div style="margin:auto;">
+            <table class="center">
+                <tr>
+                    <td> <img src="https://1000logos.net/wp-content/uploads/2018/04/Mercedes-Logo-1933.jpg" id="smallerimage"> </td>
+                    <td>
+                        <form>
+                            <input type="text" id="q1">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://i.pinimg.com/originals/f9/97/0d/f9970dd9535a68ed3db937f448a27db8.jpg" id="smallerimage"> </td>
+                    <td>
+                        <form>
+                            <input type="text" id="q2">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://i.insider.com/50f040fcecad041556000028?width=750&format=jpeg&auto=webp" id="smallerimage"> </td>
+                    <td>
+                        <form>
+                            <input type="text" id="q3">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://i.pinimg.com/736x/fa/8f/6d/fa8f6d36d82a7df9cef545444954d1de.jpg" id="smallerimage"> </td>
+                    <td>
+                        <form>
+                            <input type="text" id="q4">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.totalpartsplus.com.au/wp-content/uploads/honda-logo.jpg" id="smallerimage"> </td>
+                    <td>
+                        <form>
+                            <input type="text" id="q5">
+                    </td>
+                </tr>
+            </table>
+            <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-top: 100px; margin-bottom: 100px;" onclick="clickFunction()"> Submit for Results </button>
+        </div>
+
+        <script>
+        function clickFunction() {
+            var x = 0;
+            let q1 = document.querySelector('#q1').value;
+            q1 = q1.toLowerCase()
+            if (q1.localeCompare("mercedes benz") == 0) {
+                x++;
+            }
+            let q2 = document.querySelector('#q2').value;
+            q2 = q2.toLowerCase()
+            if (q2.localeCompare("bmw") == 0) {
+                x++;
+            }
+            let q3 = document.querySelector('#q3').value;
+            q3 = q3.toLowerCase()
+            if (q3.localeCompare("porsche") == 0) {
+                x++;
+            }
+            let q4 = document.querySelector('#q4').value;
+            q4 = q4.toLowerCase()
+            if (q4.localeCompare("renault") == 0) {
+                x++;
+            }
+            let q5 = document.querySelector('#q5').value;
+            q5 = q5.toLowerCase()
+            if (q5.localeCompare("honda") == 0) {
+                x++;
+            }
+            if ( x == 5 ) {
+                document.getElementById("Test").innerHTML = "All Correct - Well Done!";
+                document.getElementById("Test").style.color = "#AAFF00";
+            } else {
+                document.getElementById("Test").innerHTML = "You got " + x + " out of 5 correct - Try Again";
+                document.getElementById("Test").style.color = "orange";
+            }
+        }
+        </script>
+
+        <div id="bottomdiv">
+            <table class="center">
+                <tr>
+                    <td> <a href="index.html" > <button type="button"> Home </button> </a> </td>
+                    <td> <a href="dreams.html" > <button type="button"> Dreams </button> </a> </td>
+                    <td> <a href="cars.html" > <button type="button"> Cars </button> </a> </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="centerflex">
+            <p> This was developed in December 2022. <br> All code written is not to be copied by other students rather used for reference on how to design their own website. </p>
+        </div>
+    </body>
+</html>
